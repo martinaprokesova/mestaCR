@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #1f3a5f;
+  color: #fff;
+  padding: 0.6rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#mapa {
+  flex: 1;
+  min-height: 0;
+}
+
+/* Obsah popupu */
+.popup-nazev {
+  margin: 0 0 0.3rem;
+  font-size: 1.05rem;
+}
+
+.popup-popisek {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.popup-id {
+  margin: 0.4rem 0 0;
+  font-size: 0.75rem;
+  color: #777;
+}
