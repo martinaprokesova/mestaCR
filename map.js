@@ -7,11 +7,12 @@ const VYCHOZI_ZOOM = 7;
 // Inicializace mapy
 const mapa = L.map("mapa").setView(STRED_CR, VYCHOZI_ZOOM);
 
-// Podkladová mapa (OpenStreetMap)
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 19,
+// Podkladová mapa (CARTO Dark Matter, data OpenStreetMap)
+L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+  subdomains: "abcd",
+  maxZoom: 20,
   attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> přispěvatelé',
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> přispěvatelé &copy; <a href="https://carto.com/attributions">CARTO</a>',
 }).addTo(mapa);
 
 // Ochrana proti vložení HTML z dat do popupu
